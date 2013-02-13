@@ -66,6 +66,7 @@ class MailController extends Controller
         // Get login user id
         $user_id = 1; //Yii::app()->user->id;
 
+        /** @var $setting Settings */
         $setting = Settings::model()->findByAttributes(array("user_id"=>$user_id));
         if (!$setting) {
             throw new CHttpException(404, "Can't find your settings");
@@ -74,28 +75,17 @@ class MailController extends Controller
         $today = date("yy/m/d");
         $title = "【日報】{$setting->name}　$today";
 
-        // Get mailer
-        $SM = Yii::app()->swiftMailer;
-
-        // Get config
-        $mailHost = 'mail.oneofthem-vn.com';
-        $mailPort = 25; // Optional
-
-        // New transport
-        $Transport = $SM->smtpTransport($mailHost, $mailPort);
-
-        // Mailer
-        $Mailer = $SM->mailer($Transport);
-
-        // New message
-        $Message = $SM
-            ->newMessage($title)
-            ->setFrom(array($setting->from_mail => $setting->from_name))
-            ->setTo(array('luckymancvp@gmail.com' => 'nippou'))
-            ->setBody($mailContent);
-
-        // Send mail
-        $result = $Mailer->send($Message);
+        $headers = array(
+            'MIME-Version: 1.0',
+            'Content-type: text/html; charset=utf8'
+        );
+        Yii::app()->email->send(
+            $setting->from_mail,
+            'tu@oneofthem.jp',
+            $title,
+            $mailContent,
+            $headers
+        );
     }
 
     public function actionCreateForm()

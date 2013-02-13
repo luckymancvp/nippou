@@ -18,6 +18,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'application.extensions.KEmail.KEmail',
 	),
 
 	'modules'=>array(
@@ -41,6 +42,7 @@ return array(
 		),
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+            'showScriptName' => false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -79,6 +81,16 @@ return array(
         'swiftMailer' => array(
             'class' => 'ext.swiftMailer.SwiftMailer',
         ),
+
+        'email'=>array(
+            'class'=>'KEmail',
+            'host_name'=>'mail.oneofthem.jp',
+            'user'=>'tu@oneofthem.jp',
+            'password'=>'tu@oneofthem.jp1210',
+            //'authentication_mechanism'=>"login",
+            'host_port'=>587,
+            //'ssl'=>'true',
+        ),
     ),
 
 	// application-level parameters that can be accessed
@@ -88,5 +100,7 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
 
+    'defaultController'=>'mail',
+    'homeUrl'=>array('/mail'),
     'theme'=>'bootstrap',
 );
