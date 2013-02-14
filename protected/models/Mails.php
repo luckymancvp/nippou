@@ -10,4 +10,24 @@ class Mails extends MailsBase
     {
         return parent::model($className);
     }
+
+    public static function saveNewMail($content)
+    {
+        $user_id = Yii::app()->user->id;
+        $mail = new Mails();
+        $mail->user_id = $user_id;
+        $mail->content = CJSON::encode($content);
+        $mail->time    = new CDbExpression("NOW()");
+        $mail->save();
+    }
+
+    /**
+     * @return bool
+     */
+    public function isToday()
+    {
+        $now = date('Y-m-d');
+        return $now <= $this->time;
+    }
+
 }

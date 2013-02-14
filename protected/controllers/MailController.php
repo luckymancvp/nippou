@@ -2,10 +2,17 @@
 
 class MailController extends Controller
 {
-	public function actionIndex()
-	{
-	    // Get login user id
-        $user_id = 1; //Yii::app()->user->id;
+    public function actionIndex()
+    {
+        // Get login user id
+        $user_id = Yii::app()->user->id;
+
+        /** @var $mail Mails */
+        $mail = Mails::model()->findByAttributes(array("user_id"=>$user_id), array("order"=>"time desc"));
+        if (!isset($_POST["resent"]) && $mail->isToday()){
+            $this->render('index');
+            return;
+        }
 
         $form = Forms::model()->findByAttributes(array("user_id"=>$user_id));
         if (!$form){
@@ -13,21 +20,31 @@ class MailController extends Controller
             $this->redirect(array("/mail/createForm"));
         }
 
-        if (isset($_POST["params"])){
-            $mailContent = $this->genMailContent($form->content, $_POST["params"]);
-            $this->sendMail($mailContent);
+        if (!$mail){
+            $mail = new Mails();
         }
 
-		$this->render('index', array(
+        if (isset($_POST["params"])){
+            $mailContent = $this->genMailContent($form->content, $_POST["params"]);
+            Mails::saveNewMail($_POST["params"]);
+            $this->sendMail($mailContent);
+            $this->redirect(array("/mail"));
+        }
+
+        if (!$mail->content)
+            $mail->content = "{}";
+
+        $this->render('send', array(
             'form'=>$form,
-            'contentForm' => $this->escapeCharacter($form->content),
+            'contentForm'  => $this->escapeCharacter($form->content),
+            'previousValue'=> $mail->content,
         ));
     }
 
     public function actionReview()
     {
         // Get login user id
-        $user_id = 1; //Yii::app()->user->id;
+        $user_id = Yii::app()->user->id;
 
         $form = Forms::model()->findByAttributes(array("user_id"=>$user_id));
         if (!$form){
@@ -43,12 +60,7 @@ class MailController extends Controller
 
     private function escapeCharacter($content)
     {
-        $content = str_replace(" ", "&nbsp", $content);
-
-        $content = preg_replace('/\{(.*)\}/', '<code id="code-${1}">{${1}}</code>', $content);
-
-        $content = str_replace("\n", "<br>", $content);
-        $content = str_replace("\t", "&nbsp&nbsp&nbsp&nbsp", $content);
+        $content = preg_replace('/\{([^}]*)\}/', '<code id="code-${1}">{${1}}</code>', $content);
 
         return $content;
     }
@@ -64,7 +76,7 @@ class MailController extends Controller
 
     private function sendMail($mailContent){
         // Get login user id
-        $user_id = 1; //Yii::app()->user->id;
+        $user_id = Yii::app()->user->id;
 
         /** @var $setting Settings */
         $setting = Settings::model()->findByAttributes(array("user_id"=>$user_id));
@@ -91,14 +103,14 @@ class MailController extends Controller
     public function actionCreateForm()
     {
         // Get login user id
-        $user_id = 1; //Yii::app()->user->id;
+        $user_id = Yii::app()->user->id;
         $form = Forms::model()->findByAttributes(array("user_id"=>$user_id));
         if (!$form)
             $form = new Forms;
 
         if (isset($_POST['Forms'])){
             $form->attributes = $_POST['Forms'];
-            $form->user_id    = 1;//Yii::app()->user->id;
+            $form->user_id    = Yii::app()->user->id;
             if ($form->save()){
                 Yii::app()->user->setFlash("success", "Save sample form successful");
                 $this->redirect(array("/mail/"));
@@ -112,30 +124,22 @@ class MailController extends Controller
         ));
     }
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
+    public function filters()
+    {
+        return array(
+            'accessControl',
+        );
+    }
 
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
+    public function accessRules()
+    {
+        return array(
+            array('allow', // allow authenticated users to access all actions　　（されたユーザーはすべてのアクションへのアクセスを許可する）
+                'users'=>array('@'),
+            ),
+            array('deny',  // deny all users　　(すべてのユーザーを拒否する。)
+                'users'=>array('*'),
+            ),
+        );
+    }
 }

@@ -10,6 +10,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Data Center',
+    'timeZone'=>"Asia/Tokyo",
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -51,7 +52,8 @@ return array(
 		),
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=nippou',
-			'emulatePrepare' => true,
+            'initSQLs'=>array("set time_zone='+09:00';"),
+            'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'root',
 			'charset' => 'utf8',
@@ -100,7 +102,5 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 	),
 
-    'defaultController'=>'mail',
-    'homeUrl'=>array('/mail'),
     'theme'=>'bootstrap',
 );
