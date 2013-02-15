@@ -10,4 +10,9 @@ $this->pageTitle=Yii::app()->name;
 
 <p>Congratulations! You've accessed to best website in the world.</p>
 
+<?php
+    if (Yii::app()->user->isGuest)
+        echo CHtml::link("Register Now For Free", array("/site/register"), array("class"=>"btn btn-large btn-success"));
+?>
+
 <?php $this->endWidget(); ?>

@@ -98,6 +98,8 @@ class SiteController extends Controller
 		$this->render('login',array('model'=>$model));
 	}
 
+
+
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */
@@ -106,4 +108,33 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    /**
+     * Added by luckymancvp 02/11/2013 : Display register page
+     */
+    public function actionRegister()
+    {
+        $user = new Users();
+        $setting = new Settings();
+
+        if (isset($_POST['Users'])){
+            $user->attributes = $_POST['Users'];
+            if ($user->save()){
+                Yii::app()->user->setFlash('success', 'You have registered successfully');
+
+                // save settings to users
+                $setting->attributes = $_POST['Settings'];
+                $setting->user_id = $user->id;
+                if (!$setting->save()) {
+                    Yii::app()->user->setFlash("error", "Alert ! You have entered invalid settings");
+                }
+                $this->redirect(array('/site/login'));
+            }
+        }
+
+        $this->render('register', array(
+            'model'=>$user,
+            'setting' => $setting,
+        ));
+    }
 }

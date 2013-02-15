@@ -7,7 +7,9 @@
  * @property integer $id
  * @property integer $user_id
  * @property string $content
- * @property string $time
+ * @property string $send_time
+ * @property string $save_time
+ * @property integer $status
  */
 abstract class MailsBase extends CActiveRecord
 {
@@ -37,12 +39,14 @@ abstract class MailsBase extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_id, content, time', 'required'),
-			array('user_id', 'numerical', 'integerOnly'=>true),
+			array('user_id, content', 'required'),
+			array('user_id, status', 'numerical', 'integerOnly'=>true),
 			array('content', 'length', 'max'=>2555),
+			array('save_time', 'length', 'max'=>45),
+			array('send_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, user_id, content, time', 'safe', 'on'=>'search'),
+			array('id, user_id, content, send_time, save_time, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,7 +70,9 @@ abstract class MailsBase extends CActiveRecord
 			'id' => 'ID',
 			'user_id' => 'User',
 			'content' => 'Content',
-			'time' => 'Time',
+			'send_time' => 'Send Time',
+			'save_time' => 'Save Time',
+			'status' => 'Status',
 		);
 	}
 
@@ -84,7 +90,9 @@ abstract class MailsBase extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('content',$this->content,true);
-		$criteria->compare('time',$this->time,true);
+		$criteria->compare('send_time',$this->send_time,true);
+		$criteria->compare('save_time',$this->save_time,true);
+		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -19,16 +19,16 @@
 
 
 
-<h1>Send Mail Today !!</h1>
+<h1>Send Today's Report !!</h1>
 <div class="row">
     <div class="span6 well" id="content-form" style="min-height: 780px;">
         <?php
             echo $contentForm."";
         ?>
     </div>
-
     <div class="span4">
-        <form method="post" id="params" class="form-vertical">
+        <form method="post" id="params" class="form-vertical" action="<?php echo $this->createUrl('/mail/send')?>">
+
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-time"></i></span>
                 <input type="text" class="time-picker" name="params[time1]" id="time1" style="width: 150px;">
@@ -43,16 +43,19 @@
 
     <div class="span2">
         <div class="btn-group">
-            <button class="btn btn-danger" id="params-submit">Submit</button>
+            <button type="button" name="yt0" data-loading-text="Saving..." class="btn btn-primary" id="buttonStateful">Save Now</button>
             <button class="btn dropdown-toggle" data-toggle="dropdown">
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
                 <li>
+                    <a href="#" id="params-submit">Submit</a>
                     <a href="#myModal" data-toggle="modal" id="review-button">Review</a>
                 </li>
             </ul>
         </div>
+
+        <p class="muted" id="save-notify"></p>
     </div>
 
 </div>
@@ -141,4 +144,39 @@
             });
         });
     });
+
+    $('#buttonStateful').click(function() {
+        var btn = $(this);
+        btn.button('loading'); // call the loading function
+        saveNow();
+    });
+
+    function saveNow()
+    {
+        $.ajax({
+            url: '<?php echo $this->createUrl('/mail/save');?>',
+            data: $("#params").serialize(),
+            success: function(data) {
+                var d = new Date();
+                $('#buttonStateful').button('reset');
+                $('#save-notify').html("Saved at time "+ d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+                $('#save-notify').fadeIn("fast", function(){
+                    setTimeout(function() {
+                        $('#save-notify').fadeOut('slow');
+                    }, 3000);
+                });
+            }
+        });
+    }
+
+    function autoSave(){
+        saveNow();
+        setTimeout(function() {
+            autoSave();
+        }, 5000);
+    }
+
+    setTimeout(function() {
+        autoSave();
+    }, 5000);
 </script>

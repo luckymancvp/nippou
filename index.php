@@ -2,7 +2,12 @@
 
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../yii-1.1.13/framework/yii.php';
-$config=dirname(__FILE__).'/protected/config/main.php';
+
+$config_file = "main.php";
+if ($_SERVER["SERVER_NAME"] != "nippou.jp"){
+    $config_file = "deploy.php";
+}
+$config=dirname(__FILE__).'/protected/config/'.$config_file;
 
 // remove the following lines when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);

@@ -8,8 +8,9 @@ class MailController extends Controller
         $user_id = Yii::app()->user->id;
 
         /** @var $mail Mails */
-        $mail = Mails::model()->findByAttributes(array("user_id"=>$user_id), array("order"=>"time desc"));
-        if (!isset($_POST["resent"]) && $mail->isToday()){
+        $mail = Mails::getLastestMail();
+
+        if (!isset($_POST["resent"]) && Mails::isTodaySentMail()){
             $this->render('index');
             return;
         }
@@ -18,17 +19,6 @@ class MailController extends Controller
         if (!$form){
             Yii::app()->user->setFlash("error", "Please create form before send mail");
             $this->redirect(array("/mail/createForm"));
-        }
-
-        if (!$mail){
-            $mail = new Mails();
-        }
-
-        if (isset($_POST["params"])){
-            $mailContent = $this->genMailContent($form->content, $_POST["params"]);
-            Mails::saveNewMail($_POST["params"]);
-            $this->sendMail($mailContent);
-            $this->redirect(array("/mail"));
         }
 
         if (!$mail->content)
@@ -40,6 +30,45 @@ class MailController extends Controller
             'previousValue'=> $mail->content,
         ));
     }
+
+    public function actionSend()
+    {
+        // Get login user id
+        $user_id = Yii::app()->user->id;
+
+        $form = Forms::model()->findByAttributes(array("user_id"=>$user_id));
+        if (!$form){
+            Yii::app()->user->setFlash("error", "Please create form before send mail");
+            $this->redirect(array("/mail/createForm"));
+        }
+
+
+        if (isset($_POST["params"])){
+            $mailContent = $this->genMailContent($form->content, $_POST["params"]);
+            $this->sendMail($mailContent);
+            Mails::saveSentMail($_POST["params"]);
+            $this->redirect(array("/mail"));
+        }
+
+        $this->render('send', array(
+            'form'=>$form,
+            'contentForm'  => $this->escapeCharacter($form->content),
+            'previousValue'=> $mail->content,
+        ));
+    }
+
+    public function actionSave()
+    {
+        // Get login user id
+        $user_id = Yii::app()->user->id;
+
+        /** @var $mail Mails */
+        $mail = Mails::getDraftEmail();
+        $mail->saveDraftEmail($_GET["params"]);
+
+        die("Saved");
+    }
+
 
     public function actionReview()
     {
@@ -93,7 +122,7 @@ class MailController extends Controller
         );
         Yii::app()->email->send(
             $setting->from_mail,
-            'tu@oneofthem.jp',
+            $setting->to_email,
             $title,
             $mailContent,
             $headers

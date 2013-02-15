@@ -10,6 +10,7 @@
  * @property integer $time
  * @property string $from_name
  * @property string $from_mail
+ * @property string $to_email
  */
 abstract class SettingsBase extends CActiveRecord
 {
@@ -42,9 +43,10 @@ abstract class SettingsBase extends CActiveRecord
 			array('user_id, name, from_name, from_mail', 'required'),
 			array('user_id, time', 'numerical', 'integerOnly'=>true),
 			array('name, from_name, from_mail', 'length', 'max'=>255),
+			array('to_email', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, user_id, name, time, from_name, from_mail', 'safe', 'on'=>'search'),
+			array('id, user_id, name, time, from_name, from_mail, to_email', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,6 +73,7 @@ abstract class SettingsBase extends CActiveRecord
 			'time' => 'Time',
 			'from_name' => 'From Name',
 			'from_mail' => 'From Mail',
+			'to_email' => 'To Email',
 		);
 	}
 
@@ -91,6 +94,7 @@ abstract class SettingsBase extends CActiveRecord
 		$criteria->compare('time',$this->time);
 		$criteria->compare('from_name',$this->from_name,true);
 		$criteria->compare('from_mail',$this->from_mail,true);
+		$criteria->compare('to_email',$this->to_email,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
