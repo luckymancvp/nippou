@@ -50,11 +50,28 @@ class MailController extends Controller
             $this->redirect(array("/mail"));
         }
 
-        $this->render('send', array(
-            'form'=>$form,
-            'contentForm'  => $this->escapeCharacter($form->content),
-            'previousValue'=> $mail->content,
-        ));
+        $this->redirect(array("/mail"));
+    }
+
+    public function actionLater()
+    {
+        // Get login user id
+        $user_id = Yii::app()->user->id;
+
+        $form = Forms::model()->findByAttributes(array("user_id"=>$user_id));
+        if (!$form){
+            Yii::app()->user->setFlash("error", "Please create form before send mail");
+            $this->redirect(array("/mail/createForm"));
+        }
+
+
+        if (isset($_POST["params"])){
+            $mailContent = $this->genMailContent($form->content, $_POST["params"]);
+            Mails::saveLaterMail($_POST["params"]);
+            $this->redirect(array("/mail"));
+        }
+
+        $this->redirect(array("/mail"));
     }
 
     public function actionSave()

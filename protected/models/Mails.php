@@ -4,6 +4,7 @@ class Mails extends MailsBase
     const STATUS_DRAFT = 0;
     const STATUS_SENT  = 1;
     const STATUS_SAVED = 2;
+    const STATUS_LATER = 3;
 
     /**
      * Returns the static model of the specified AR class.
@@ -21,6 +22,17 @@ class Mails extends MailsBase
         $mail->content   = CJSON::encode($content);
         $mail->send_time = new CDbExpression("NOW()");
         $mail->status    = self::STATUS_SENT;
+        $mail->save();
+    }
+
+    public static function saveLaterMail($content)
+    {
+        $mail            = Mails::getDraftEmail();
+        $mail->content   = CJSON::encode($content);
+
+        $laterTime = date('Y-m-d'). " ".$content["later-time"].":00";
+        $mail->send_time = $laterTime;
+        $mail->status    = self::STATUS_LATER;
         $mail->save();
     }
 
@@ -87,7 +99,7 @@ class Mails extends MailsBase
         $criteria = new CDbCriteria();
         $criteria->addCondition("user_id = '$user_id'");
         $criteria->addCondition("status = '".self::STATUS_SENT."'");
-        $criteria->addCondition("send_time between '$today' and '$tomorrow'");
+        $criteria->addCondition("send_time > '$today' and send_time < '$tomorrow'");
 
         return Mails::model()->exists($criteria);
     }

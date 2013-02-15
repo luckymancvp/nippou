@@ -27,7 +27,8 @@
         ?>
     </div>
     <div class="span4">
-        <form method="post" id="params" class="form-vertical" action="<?php echo $this->createUrl('/mail/send')?>">
+        <form method="post" id="params" class="form-vertical">
+            <input type="hidden" name="params[later-time]" id="param-latter">
 
             <div class="input-prepend">
                 <span class="add-on"><i class="icon-time"></i></span>
@@ -42,20 +43,25 @@
     </div>
 
     <div class="span2">
-        <div class="btn-group">
-            <button type="button" name="yt0" data-loading-text="Saving..." class="btn btn-primary" id="buttonStateful">Save Now</button>
-            <button class="btn dropdown-toggle" data-toggle="dropdown">
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li>
-                    <a href="#" id="params-submit">Submit</a>
-                    <a href="#myModal" data-toggle="modal" id="review-button">Review</a>
-                </li>
-            </ul>
-        </div>
+        <div class="row">
+            <div class="span2">
+                <div class="btn-group">
+                    <button type="button" name="yt0" data-loading-text="Saving..." class="btn btn-primary" id="buttonStateful">Save Now</button>
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#" id="params-submit">Send</a>
+                            <a href="#send-later" data-toggle="modal">Send Later</a>
+                            <a href="#myModal" data-toggle="modal" id="review-button">Review</a>
+                        </li>
+                    </ul>
+                </div>
 
-        <p class="muted" id="save-notify"></p>
+                <p class="muted" id="save-notify"></p>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -70,6 +76,24 @@
     </div>
     <div class="modal-footer">
         <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="send-later" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Send Mail Later</h3>
+    </div>
+    <div class="modal-body">
+        <label>Please enter your time you want to send</label>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-time"></i></span>
+            <input type="text" class="time-picker" id="timer-later" style="width: 150px;">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true" id="send-later-submit">Done</button>
     </div>
 </div>
 
@@ -130,6 +154,13 @@
         });
 
         $("#params-submit").click(function(e) {
+            $("form").attr("action", "<?php echo $this->createUrl('/mail/send')?>");
+            $("form").submit();
+        });
+
+        $("#send-later-submit").click(function(e) {
+            $("#param-latter").val($("#timer-later").val());
+            $("form").attr("action", "<?php echo $this->createUrl('/mail/later')?>");
             $("form").submit();
         });
 
