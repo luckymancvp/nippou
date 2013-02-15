@@ -130,7 +130,7 @@ class MailController extends Controller
             throw new CHttpException(404, "Can't find your settings");
         }
 
-        $today = date("yy/m/d");
+        $today = date("Y/m/d");
         $title = "【日報】{$setting->name}　$today";
 
         $headers = array(
