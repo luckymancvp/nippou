@@ -18,3 +18,26 @@ $this->breadcrumbs=array(
     <small>Duong Minh Khoa <cite title="Source Title">says on his personal <a href="https://www.khoadm.com" >website</a> </cite></small>
 </blockquote>
 
+<ol>
+    <li>
+        Get Started
+        <ul style="">
+            <li>
+                The first time, you must create your own form at this url&nbsp;</li>
+            <li>
+                After fill your report&#39;s form , you can write content mail at this url</li>
+            <li>
+                Finally, Click on Review button to review the mail will be sent. Or Click on Send Mail to send report</li>
+        </ul>
+    </li>
+    <li>
+        Feauture</li>
+</ol>
+<ul style="margin-left: 40px; ">
+    <li>
+        Auto save writting mail</li>
+    <li>
+        Flexibility settings</li>
+    <li>
+        Auto send mail</li>
+</ul>

@@ -86,7 +86,7 @@ class Mails extends MailsBase
 
         $criteria = new CDbCriteria();
         $criteria->addCondition("user_id = '$user_id'");
-        $criteria->addCondition("status = '".self::STATUS_SAVED."'");
+        $criteria->addCondition("status = '".self::STATUS_SENT."'");
         $criteria->addCondition("send_time between '$today' and '$tomorrow'");
 
         return Mails::model()->exists($criteria);
