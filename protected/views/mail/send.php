@@ -15,19 +15,28 @@
         ).
             '/jquery-ui-1.8.18.custom.css', 'screen'
     );
+
+
+    $cs->registerCssFile(Yii::app()->theme->baseUrl. "/css/wysihtml5.css", "screen");
+    echo '<script type="text/javascript" src="'.Yii::app()->theme->baseUrl.'/js/wysihtml5-0.3.0_rc2.min.js"></script>';
+    echo '<script type="text/javascript" src="'.Yii::app()->theme->baseUrl.'/js/wysihtml5.js"></script>';
 ?>
 
 
 
 <h1>Send Today's Report !!</h1>
 <div class="row">
-    <div class="span6 well" id="content-form" style="min-height: 780px;">
+    <div class="span5 well" id="content-form" style="min-height: 780px;">
         <?php
             echo $contentForm."";
         ?>
     </div>
-    <div class="span4">
+    <div class="span6">
         <form method="post" id="params" class="form-vertical">
+
+            <button type="button" name="yt0" data-loading-text="Editor ON" class="btn btn-primary" id="buttonEditor">Turn On Editor</button>
+            <br><br><br>
+
             <input type="hidden" name="params[later-time]" id="param-latter">
 
             <div class="input-prepend">
@@ -42,9 +51,13 @@
         </form>
     </div>
 
-    <div class="span2">
+
+</div>
+<div class="row">
+
+    <div class="span">
         <div class="row">
-            <div class="span2">
+            <div class="span">
                 <div class="btn-group">
                     <button type="button" name="yt0" data-loading-text="Saving..." class="btn btn-primary" id="buttonStateful">Save Now</button>
                     <button class="btn dropdown-toggle" data-toggle="dropdown">
@@ -63,9 +76,7 @@
             </div>
         </div>
     </div>
-
 </div>
-
 <!-- Modal -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
@@ -180,6 +191,26 @@
         var btn = $(this);
         btn.button('loading'); // call the loading function
         saveNow();
+    });
+
+    $('#buttonEditor').click(function() {
+        var btn = $(this);
+        btn.button('loading'); // call the loading function
+
+        params = contentForm.match(/\{([^}]*)\}/g);
+        for (i=0 ;i<params.length; i++){
+            param = params[i].substr(1, params[i].length -2);
+            switch (param){
+                case "date":
+                    break;
+                case "time1":
+                    break;
+                case "time2":
+                    break;
+                default:
+                    $('textarea#'+param).wysihtml5();
+            }
+        }
     });
 
     function saveNow()
