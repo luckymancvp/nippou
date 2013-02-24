@@ -8,7 +8,7 @@ class MailController extends Controller
         $user_id = Yii::app()->user->id;
 
         /** @var $mail Mails */
-        $mail = Mails::getLastestMail();
+        $mail = Mails::getDraftEmail();
 
         if (!isset($_POST["resent"]) && Mails::isTodaySentMail()){
             $this->render('index');

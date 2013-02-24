@@ -1,21 +1,15 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: luckymancvp
- * Date: 2/15/13
- * Time: 8:50 PM
- * To change this template use File | Settings | File Templates.
- */
-class AutoSendCommand extends CConsoleCommand
+
+class AutoSendController extends Controller
 {
-    public function run($args)
-    {
+	public function actionIndex()
+	{
         // Do task 1
         $this->doTask1();
 
         // Do task 2
         $this->doTask2();
-    }
+	}
 
     /**
      * Check if have latter mail in current time

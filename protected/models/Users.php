@@ -50,4 +50,38 @@ class Users extends UsersBase
         $this->password = md5($this->password);
         return true;
     }
+
+    /**
+     * return bool if user hasn't sent mail before settings time
+     * true : has not sent
+     * false : sent or time is not coming
+     */
+    public function notSentMailBeforeLimitedTime()
+    {
+        /** @var $setting Settings */
+        $setting = Settings::model()->findByAttributes(array('user_id'=>$this->id));
+        if (!$setting) return false;
+
+        $now = date("h:i");
+        if ($now < $setting->time)
+            return false;
+
+        $today = date('Y-m-d');
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("status != '".Mails::STATUS_DRAFT."'");
+        $criteria->addCondition("send_time >= '$today' and send_time < '$today $now'");
+
+        return !Mails::model()->exists($criteria);
+    }
+
+    public function sendTodayMissMail()
+    {
+        /** @var $setting Settings */
+        $setting = Settings::model()->findByAttributes(array('user_id'=>$this->id));
+        if (!$setting) return false;
+
+        // Get today draft mail
+        $mail = Mails::getDraftEmail($this->id);
+        MailService::sendMail($mail);
+    }
 }

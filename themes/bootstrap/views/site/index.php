@@ -16,3 +16,17 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <?php $this->endWidget(); ?>
+
+
+<a class="a hasBackground"/>
+
+<script>
+
+    $(document).ready(function(){
+        console.log($(".a").attr("class"));
+    });
+</script>
+
+    <style>
+
+    </style>

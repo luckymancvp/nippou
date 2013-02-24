@@ -45,9 +45,11 @@ class Mails extends MailsBase
         return $now <= $this->time;
     }
 
-    public static function getDraftEmail()
+    public static function getDraftEmail($user_id = null)
     {
-        $user_id = Yii::app()->user->id;
+        if (!$user_id)
+            $user_id = Yii::app()->user->id;
+
         $today = date('Y-m-d');
         $tomorrow = $today. " 25";
 
@@ -62,6 +64,9 @@ class Mails extends MailsBase
         if (!$mail){
             $mail = new  Mails;
             $mail->user_id = $user_id;
+
+            $previousMail = Mails::getLastestMail();
+            $mail->content = $previousMail->content;
         }
 
         return $mail;
@@ -102,6 +107,30 @@ class Mails extends MailsBase
         $criteria->addCondition("send_time > '$today' and send_time < '$tomorrow'");
 
         return Mails::model()->exists($criteria);
+    }
+
+    public static function getNowLaterMail()
+    {
+        $now = date('Y-m-d h:i:s');
+        $next_minute = date("Y-m-d h:i:s", strtotime("+1 minute"));
+
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("status = '".self::STATUS_LATER."'");
+        $criteria->addCondition("send_time >= '$now' and send_time < '$next_minute'");
+
+        return Mails::model()->findAll($criteria);
+    }
+
+    public static function getTodayLaterMail()
+    {
+        $today = date('Y-m-d');
+        $tomorrow = $today. " 25";
+
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("status = '".self::STATUS_LATER."'");
+        $criteria->addCondition("send_time > '$today' and send_time < '$tomorrow'");
+
+        return Mails::model()->findAll($criteria);
     }
 
 }
