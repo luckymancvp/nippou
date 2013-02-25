@@ -566,3 +566,1118 @@ REQUEST_URI=/nippou/index.php/mail
 in /Applications/MAMP/htdocs/nippou/protected/extensions/swiftMailer/lib/classes/Swift/Transport/StreamBuffer.php (243)
 in /Applications/MAMP/htdocs/nippou/protected/extensions/swiftMailer/lib/classes/Swift/Transport/StreamBuffer.php (80)
 in /Applications/MAMP/htdocs/nippou/protected/extensions/swiftMailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php (111)
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-navy.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-navy....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-navy.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-asfalt.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-asfal...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-asfalt.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-burried.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-burri...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-burried.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-brick.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-brick...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-brick.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-cloth.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-cloth...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-cloth.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-darkdenim3.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-darkd...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-darkdenim3.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-dirty.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-dirty...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-dirty.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-dotted.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-dotte...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-dotted.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-denim.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-denim...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-denim.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-hexabunp.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-hexab...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-hexabunp.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-fabric.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-fabri...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-fabric.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-dvsup.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-dvsup...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-dvsup.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-icongrpip.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-icong...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-icongrpip.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-carbon.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-carbo...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-carbon.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-illusion.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-illus...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-illusion.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-linen.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-linen...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-linen.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-mamba.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-mamba...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-mamba.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-matter.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-matte...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-matter.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-office.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-offic...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-office.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-nami.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-nami....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-nami.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-rebel.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-rebel...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-rebel.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-metal.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-metal...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-metal.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-outlets.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-outle...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-outlets.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-noisy.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-noisy...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-noisy.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-tasky.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-tasky...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-tasky.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-suit.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-suit....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-suit.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-skewed.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-skewe...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-skewed.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-tr24.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-tr24....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-tr24.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-tile.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-tile....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-tile.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-twill.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-twill...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-twill.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-tire.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-tire....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-tire.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-txture.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-txtur...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-txture.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-wall.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/bg-wall....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-wall.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/timer.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/timer.pn...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/timer.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/progress-background.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/progress...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/progress-background.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/progress-tooltip.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/progress...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/progress-tooltip.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/progress-bar.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/progress...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/progress-bar.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/footer-background.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/footer-b...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/footer-background.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/social-circle.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/social-c...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/social-circle.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/notify.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/notify.p...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/notify.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-navy.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-navy.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-burried.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-burried.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-darkdenim3.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-darkdenim3.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-brick.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-brick.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-asfalt.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-asfalt.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-carbon.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-carbon.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-cloth.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-cloth.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-dirty.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-dirty.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-denim.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-denim.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-dvsup.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-dvsup.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-dotted.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-dotted.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-fabric.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-fabric.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-hexabunp.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-hexabunp.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-illusion.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-illusion.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-icongrpip.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-icongrpip.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-linen.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-linen.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-mamba.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-mamba.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-matter.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-matter.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-metal.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-metal.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-nami.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-nami.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-noisy.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-noisy.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-office.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-office.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-outlets.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-outlets.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-suit.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-suit.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-tasky.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-tasky.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-rebel.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-rebel.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-skewed.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-skewed.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-tire.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-tire.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-tr24.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-tr24.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-tile.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-tile.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-twill.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-twill.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-wall.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-wall.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/bg-txture.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/bg-txture.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/progress-background.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/progress-background.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/progress-bar.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/progress-bar.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/progress-tooltip.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/progress-tooltip.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/timer.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/timer.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/footer-background.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/footer-background.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/social-circle.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/social-circle.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countdown/css/images/notify.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('countdown/css/i...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/countdown/css/images/notify.png
+HTTP_REFERER=http://nippou.jp/countdown/css/style.css
+---
+2013/02/24 18:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/24 18:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery.min.js".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('js/jquery.min.j...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery.min.js
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/24 18:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/notify.js".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('js/notify.js')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/notify.js
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/24 18:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/notify.js".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('js/notify.js')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/notify.js
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/24 18:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/favicon....')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2013/02/24 18:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/text-logo.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/text-log...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/text-logo.png
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/24 18:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/ribbon.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/ribbon.p...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/ribbon.png
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/24 18:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/ribbon.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/ribbon.p...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/ribbon.png
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/24 18:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/text-logo.png".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('images/text-log...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/text-logo.png
+HTTP_REFERER=http://nippou.jp/countdown/
+---
+2013/02/25 22:00:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:01:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:02:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:09:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:09:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "”mailto:name@domain.com".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('???mailto:name@...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/%E2%80%9Dmailto:name@domain.com?cc=another@domain.com&subject=quote%20request&body=please%20provide%20prices%20for%20the%20following%20project%0D%0DProject%20description%E2%80%9D
+HTTP_REFERER=http://nippou.jp/mail
+---
+2013/02/25 22:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:14:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:14:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:24:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:29:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:31:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:34:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:39:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:41:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:46:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:47:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---
+2013/02/25 22:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/lib/bootstrap/less/mixins.less".' in /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii-1.1.13/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/lib/boot...')
+#1 /Applications/MAMP/htdocs/yii-1.1.13/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/nippou/index.php(19): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/lib/bootstrap/less/mixins.less
+HTTP_REFERER=http://nippou.jp/assets/e3ecaab1/css/yii.css
+---

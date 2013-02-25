@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)http://localhost:8888/fishing/index.php/debugTool/editUser/4 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CDbException</title>
+
+<style type="text/css">
+/*<![CDATA[*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+
+body {
+	font: normal 9pt "Verdana";
+	color: #000;
+	background: #fff;
+}
+
+h1 {
+	font: normal 18pt "Verdana";
+	color: #f00;
+	margin-bottom: .5em;
+}
+
+h2 {
+	font: normal 14pt "Verdana";
+	color: #800000;
+	margin-bottom: .5em;
+}
+
+h3 {
+	font: bold 11pt "Verdana";
+}
+
+pre {
+	font: normal 11pt Menlo, Consolas, "Lucida Console", Monospace;
+}
+
+pre span.error {
+	display: block;
+	background: #fce3e3;
+}
+
+pre span.ln {
+	color: #999;
+	padding-right: 0.5em;
+	border-right: 1px solid #ccc;
+}
+
+pre span.error-ln {
+	font-weight: bold;
+}
+
+.container {
+	margin: 1em 4em;
+}
+
+.version {
+	color: gray;
+	font-size: 8pt;
+	border-top: 1px solid #aaa;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.message {
+	color: #000;
+	padding: 1em;
+	font-size: 11pt;
+	background: #f3f3f3;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 1em;
+	line-height: 160%;
+}
+
+.source {
+	margin-bottom: 1em;
+}
+
+.code pre {
+	background-color: #ffe;
+	margin: 0.5em 0;
+	padding: 0.5em;
+	line-height: 125%;
+	border: 1px solid #eee;
+}
+
+.source .file {
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.traces {
+	margin: 2em 0;
+}
+
+.trace {
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+
+.trace.app {
+	border: 1px dashed #c00;
+}
+
+.trace .number {
+	text-align: right;
+	width: 2em;
+	padding: 0.5em;
+}
+
+.trace .content {
+	padding: 0.5em;
+}
+
+.trace .plus,
+.trace .minus {
+	display:inline;
+	vertical-align:middle;
+	text-align:center;
+	border:1px solid #000;
+	color:#000;
+	font-size:10px;
+	line-height:10px;
+	margin:0;
+	padding:0 1px;
+	width:10px;
+	height:10px;
+}
+
+.trace.collapsed .minus,
+.trace.expanded .plus,
+.trace.collapsed pre {
+	display: none;
+}
+
+.trace-file {
+	cursor: pointer;
+	padding: 0.2em;
+}
+
+.trace-file:hover {
+	background: #f0ffff;
+}
+/*]]>*/
+</style>
+<style type="text/css" id="GRstyle">.GRnoMark { background : transparent; }  .GRwrapper{ position: absolute; overflow: hidden; margin: 0px; padding: 0px; border: 0px solid transparent } .GRcontour { position : absolute; margin: 0px; }  .GRrichText { margin : 0px; padding-bottom: 3px; border-width: 0px; border-color: transparent; display: block; color: transparent; -webkit-text-fill-color: transparent; overflow: hidden; white-space: pre-wrap;}  .GRinputWrapper .GRrichText {position: absolute;}  .GRcanvas { display:none; background-repeat:no-repeat;}  .GRcorrect, .GRSpellingCorrect, .GRspelling { background : url(data:image/gif;base64,R0lGODlhAQADAIAAAILEKgAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0JBN0M5OUJFRjcwMTFFMTg2RjdEOTdCQTk0QTU1QTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0JBN0M5OUNFRjcwMTFFMTg2RjdEOTdCQTk0QTU1QTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQkE3Qzk5OUVGNzAxMUUxODZGN0Q5N0JBOTRBNTVBMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQkE3Qzk5QUVGNzAxMUUxODZGN0Q5N0JBOTRBNTVBMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAAAAAAALAAAAAABAAMAAAIChAsAOw==) left bottom repeat-x !important; padding-bottom : 2px !important; text-decoration : none !important ; position : relative; } .GRline { background : url(data:image/gif;base64,R0lGODlhAQADAIAAAILEKgAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0JBN0M5OUJFRjcwMTFFMTg2RjdEOTdCQTk0QTU1QTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0JBN0M5OUNFRjcwMTFFMTg2RjdEOTdCQTk0QTU1QTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQkE3Qzk5OUVGNzAxMUUxODZGN0Q5N0JBOTRBNTVBMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQkE3Qzk5QUVGNzAxMUUxODZGN0Q5N0JBOTRBNTVBMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAAAAAAALAAAAAABAAMAAAIChAsAOw==) left bottom repeat-x !important; height : 3px ; position : absolute; bottom : 0px; left: 0px; right: 0px; }</style></head>
+
+<body grstyle="true">
+<div class="container">
+	<h1>CDbException</h1>
+
+	<p class="message">
+		CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''l1 LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `s_user` `t` WHERE opensocial_owner_id = 'l1 LIMIT 1	</p>
+
+	<div class="source">
+		<p class="file">/Applications/MAMP/htdocs/yii/framework/db/CDbCommand.php(528)</p>
+		<div class="code"><pre><span class="ln">516</span>             return $result;
+<span class="ln">517</span>         }
+<span class="ln">518</span>         catch(Exception $e)
+<span class="ln">519</span>         {
+<span class="ln">520</span>             if($this-&gt;_connection-&gt;enableProfiling)
+<span class="ln">521</span>                 Yii::endProfile('system.db.CDbCommand.query('.$this-&gt;getText().$par.')','system.db.CDbCommand.query');
+<span class="ln">522</span>             $errorInfo = $e instanceof PDOException ? $e-&gt;errorInfo : null;
+<span class="ln">523</span>             $message = $e-&gt;getMessage();
+<span class="ln">524</span>             Yii::log(Yii::t('yii','CDbCommand::{method}() failed: {error}. The SQL statement executed was: {sql}.',
+<span class="ln">525</span>                 array('{method}'=&gt;$method, '{error}'=&gt;$message, '{sql}'=&gt;$this-&gt;getText().$par)),CLogger::LEVEL_ERROR,'system.db.CDbCommand');
+<span class="ln">526</span>             if(YII_DEBUG)
+<span class="ln">527</span>                 $message .= '. The SQL statement executed was: '.$this-&gt;getText().$par;
+<span class="error"><span class="ln error-ln">528</span>             throw new CDbException(Yii::t('yii','CDbCommand failed to execute the SQL statement: {error}',
+</span><span class="ln">529</span>                 array('{error}'=&gt;$message)),(int)$e-&gt;getCode(),$errorInfo);
+<span class="ln">530</span>         }
+<span class="ln">531</span>     }
+<span class="ln">532</span> 
+<span class="ln">533</span>     /**
+<span class="ln">534</span>      * Builds a SQL SELECT statement from the given query specification.
+<span class="ln">535</span>      * <a href="http://twitter.com/param">@param</a> array $query the query specification in name-value pairs. The following
+<span class="ln">536</span>      * query options are supported: {<a href="http://twitter.com/link">@link</a> select}, {<a href="http://twitter.com/link">@link</a> distinct}, {<a href="http://twitter.com/link">@link</a> from},
+<span class="ln">537</span>      * {<a href="http://twitter.com/link">@link</a> where}, {<a href="http://twitter.com/link">@link</a> join}, {<a href="http://twitter.com/link">@link</a> group}, {<a href="http://twitter.com/link">@link</a> having}, {<a href="http://twitter.com/link">@link</a> order},
+<span class="ln">538</span>      * {<a href="http://twitter.com/link">@link</a> limit}, {<a href="http://twitter.com/link">@link</a> offset} and {<a href="http://twitter.com/link">@link</a> union}.
+<span class="ln">539</span>      * <a href="http://twitter.com/return">@return</a> string the SQL statement
+<span class="ln">540</span>      * <a href="http://twitter.com/since">@since</a> 1.1.6
+</pre></div>	</div>
+
+	<div class="traces">
+		<h2>Stack Trace</h2>
+				<table style="width:100%;">
+						<tbody><tr class="trace core collapsed">
+			<td class="number">
+				#0			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/db/CDbCommand.php(408): <strong>CDbCommand</strong>-&gt;<strong>queryInternal</strong>("fetch", array(2), array())				</div>
+
+				<div class="code"><pre><span class="ln">403</span>      * <a href="http://twitter.com/return">@return</a> mixed the first row (in terms of an array) of the query result, false if no result.
+<span class="ln">404</span>      * <a href="http://twitter.com/throws">@throws</a> CException execution failed
+<span class="ln">405</span>      */
+<span class="ln">406</span>     public function queryRow($fetchAssociative=true,$params=array())
+<span class="ln">407</span>     {
+<span class="error"><span class="ln error-ln">408</span>         return $this-&gt;queryInternal('fetch',$fetchAssociative ? $this-&gt;_fetchMode : PDO::FETCH_NUM, $params);
+</span><span class="ln">409</span>     }
+<span class="ln">410</span> 
+<span class="ln">411</span>     /**
+<span class="ln">412</span>      * Executes the SQL statement and returns the value of the first column in the first row of data.
+<span class="ln">413</span>      * This is a convenient method of {<a href="http://twitter.com/link">@link</a> query} when only a single scalar
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#1			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1307): <strong>CDbCommand</strong>-&gt;<strong>queryRow</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">1302</span>         if(empty($criteria-&gt;with))
+<span class="ln">1303</span>         {
+<span class="ln">1304</span>             if(!$all)
+<span class="ln">1305</span>                 $criteria-&gt;limit=1;
+<span class="ln">1306</span>             $command=$this-&gt;getCommandBuilder()-&gt;createFindCommand($this-&gt;getTableSchema(),$criteria);
+<span class="error"><span class="ln error-ln">1307</span>             return $all ? $this-&gt;populateRecords($command-&gt;queryAll(), true, $criteria-&gt;index) : $this-&gt;populateRecord($command-&gt;queryRow());
+</span><span class="ln">1308</span>         }
+<span class="ln">1309</span>         else
+<span class="ln">1310</span>         {
+<span class="ln">1311</span>             $finder=new CActiveFinder($this,$criteria-&gt;with);
+<span class="ln">1312</span>             return $finder-&gt;query($criteria,$all);
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#2			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1412): <strong>CActiveRecord</strong>-&gt;<strong>query</strong>(CDbCriteria)				</div>
+
+				<div class="code"><pre><span class="ln">1407</span>      */
+<span class="ln">1408</span>     public function find($condition='',$params=array())
+<span class="ln">1409</span>     {
+<span class="ln">1410</span>         Yii::trace(get_class($this).'.find()','system.db.ar.CActiveRecord');
+<span class="ln">1411</span>         $criteria=$this-&gt;getCommandBuilder()-&gt;createCriteria($condition,$params);
+<span class="error"><span class="ln error-ln">1412</span>         return $this-&gt;query($criteria);
+</span><span class="ln">1413</span>     }
+<span class="ln">1414</span> 
+<span class="ln">1415</span>     /**
+<span class="ln">1416</span>      * Finds all active records satisfying the specified condition.
+<span class="ln">1417</span>      * See {<a href="http://twitter.com/link">@link</a> find()} for detailed explanation about $condition and $params.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#3			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/fishing/protected/services/DebugToolService.php(83): <strong>CActiveRecord</strong>-&gt;<strong>find</strong>("opensocial_owner_id = 'l1", array(":opensocial_owner_id" =&gt; "l1"))				</div>
+
+				<div class="code"><pre><span class="ln">78</span>      */
+<span class="ln">79</span>     public static
+<span class="ln">80</span> 
+<span class="ln">81</span>     function validateOSI($user)
+<span class="ln">82</span>     {
+<span class="error"><span class="ln error-ln">83</span>         $findUser = $user-&gt;find("opensocial_owner_id = '$user-&gt;opensocial_owner_id", array(':opensocial_owner_id'=&gt;$user-&gt;opensocial_owner_id));
+</span><span class="ln">84</span>         if (!$findUser || $findUser-&gt;id == $user-&gt;id) return true;
+<span class="ln">85</span>         die("12345");
+<span class="ln">86</span>         $user-&gt;addError("opensocial_owner_id", "duplicated opensocial_owner_id");
+<span class="ln">87</span>         return false;
+<span class="ln">88</span> 
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#4			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php(143): <strong>DebugToolService</strong>::<strong>validateOSI</strong>(User)				</div>
+
+				<div class="code"><pre><span class="ln">138</span>             throw new CHttpException(404, $this-&gt;_messageTypeNotFound);
+<span class="ln">139</span>         }
+<span class="ln">140</span> 
+<span class="ln">141</span>         if (isset($_POST["User"])){
+<span class="ln">142</span>             $user-&gt;attributes = $_POST["User"];
+<span class="error"><span class="ln error-ln">143</span>             if (DebugToolService::validateOSI($user) &amp;&amp; $user-&gt;save()){
+</span><span class="ln">144</span>                 $this-&gt;redirect(array("/debugTool/user"));
+<span class="ln">145</span>             }
+<span class="ln">146</span>         }
+<span class="ln">147</span> 
+<span class="ln">148</span>         $widgetParams = array(
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#5			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(50): <strong>DebugToolController</strong>-&gt;<strong>actionEditUser</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">45</span>         $controller=$this-&gt;getController();
+<span class="ln">46</span>         $method=new ReflectionMethod($controller, $methodName);
+<span class="ln">47</span>         if($method-&gt;getNumberOfParameters()&gt;0)
+<span class="ln">48</span>             return $this-&gt;runWithParamsInternal($controller, $method, $params);
+<span class="ln">49</span>         else
+<span class="error"><span class="ln error-ln">50</span>             return $controller-&gt;$methodName();
+</span><span class="ln">51</span>     }
+<span class="ln">52</span> 
+<span class="ln">53</span> }
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#6			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/web/CController.php(309): <strong>CInlineAction</strong>-&gt;<strong>runWithParams</strong>(array("id" =&gt; "4", "User" =&gt; array("shard_id" =&gt; "1", "opensocial_owner_id" =&gt; "l1", "user_name" =&gt; "l0i1SLRk", "level" =&gt; "2", ...), "yt0" =&gt; "Save"))				</div>
+
+				<div class="code"><pre><span class="ln">304</span>     {
+<span class="ln">305</span>         $priorAction=$this-&gt;_action;
+<span class="ln">306</span>         $this-&gt;_action=$action;
+<span class="ln">307</span>         if($this-&gt;beforeAction($action))
+<span class="ln">308</span>         {
+<span class="error"><span class="ln error-ln">309</span>             if($action-&gt;runWithParams($this-&gt;getActionParams())===false)
+</span><span class="ln">310</span>                 $this-&gt;invalidActionParams($action);
+<span class="ln">311</span>             else
+<span class="ln">312</span>                 $this-&gt;afterAction($action);
+<span class="ln">313</span>         }
+<span class="ln">314</span>         $this-&gt;_action=$priorAction;
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#7			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/web/CController.php(287): <strong>CController</strong>-&gt;<strong>runAction</strong>(CInlineAction)				</div>
+
+				<div class="code"><pre><span class="ln">282</span>      * <a href="http://twitter.com/see">@see</a> runAction
+<span class="ln">283</span>      */
+<span class="ln">284</span>     public function runActionWithFilters($action,$filters)
+<span class="ln">285</span>     {
+<span class="ln">286</span>         if(empty($filters))
+<span class="error"><span class="ln error-ln">287</span>             $this-&gt;runAction($action);
+</span><span class="ln">288</span>         else
+<span class="ln">289</span>         {
+<span class="ln">290</span>             $priorAction=$this-&gt;_action;
+<span class="ln">291</span>             $this-&gt;_action=$action;
+<span class="ln">292</span>             CFilterChain::create($this,$action,$filters)-&gt;run();
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#8			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/web/CController.php(266): <strong>CController</strong>-&gt;<strong>runActionWithFilters</strong>(CInlineAction, array())				</div>
+
+				<div class="code"><pre><span class="ln">261</span>         {
+<span class="ln">262</span>             if(($parent=$this-&gt;getModule())===null)
+<span class="ln">263</span>                 $parent=Yii::app();
+<span class="ln">264</span>             if($parent-&gt;beforeControllerAction($this,$action))
+<span class="ln">265</span>             {
+<span class="error"><span class="ln error-ln">266</span>                 $this-&gt;runActionWithFilters($action,$this-&gt;filters());
+</span><span class="ln">267</span>                 $parent-&gt;afterControllerAction($this,$action);
+<span class="ln">268</span>             }
+<span class="ln">269</span>         }
+<span class="ln">270</span>         else
+<span class="ln">271</span>             $this-&gt;missingAction($actionID);
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#9			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(283): <strong>CController</strong>-&gt;<strong>run</strong>("editUser")				</div>
+
+				<div class="code"><pre><span class="ln">278</span>         {
+<span class="ln">279</span>             list($controller,$actionID)=$ca;
+<span class="ln">280</span>             $oldController=$this-&gt;_controller;
+<span class="ln">281</span>             $this-&gt;_controller=$controller;
+<span class="ln">282</span>             $controller-&gt;init();
+<span class="error"><span class="ln error-ln">283</span>             $controller-&gt;run($actionID);
+</span><span class="ln">284</span>             $this-&gt;_controller=$oldController;
+<span class="ln">285</span>         }
+<span class="ln">286</span>         else
+<span class="ln">287</span>             throw new CHttpException(404,Yii::t('yii','Unable to resolve the request "{route}".',
+<span class="ln">288</span>                 array('{route}'=&gt;$route===''?$this-&gt;defaultController:$route)));
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#10			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(142): <strong>CWebApplication</strong>-&gt;<strong>runController</strong>("debugTool/editUser")				</div>
+
+				<div class="code"><pre><span class="ln">137</span>             foreach(array_splice($this-&gt;catchAllRequest,1) as $name=&gt;$value)
+<span class="ln">138</span>                 $_GET[$name]=$value;
+<span class="ln">139</span>         }
+<span class="ln">140</span>         else
+<span class="ln">141</span>             $route=$this-&gt;getUrlManager()-&gt;parseUrl($this-&gt;getRequest());
+<span class="error"><span class="ln error-ln">142</span>         $this-&gt;runController($route);
+</span><span class="ln">143</span>     }
+<span class="ln">144</span> 
+<span class="ln">145</span>     /**
+<span class="ln">146</span>      * Registers the core application components.
+<span class="ln">147</span>      * This method overrides the parent implementation by registering additional core components.
+</pre></div>			</td>
+		</tr>
+						<tr class="trace core collapsed">
+			<td class="number">
+				#11			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/yii/framework/base/CApplication.php(162): <strong>CWebApplication</strong>-&gt;<strong>processRequest</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">157</span>      */
+<span class="ln">158</span>     public function run()
+<span class="ln">159</span>     {
+<span class="ln">160</span>         if($this-&gt;hasEventHandler('onBeginRequest'))
+<span class="ln">161</span>             $this-&gt;onBeginRequest(new CEvent($this));
+<span class="error"><span class="ln error-ln">162</span>         $this-&gt;processRequest();
+</span><span class="ln">163</span>         if($this-&gt;hasEventHandler('onEndRequest'))
+<span class="ln">164</span>             $this-&gt;onEndRequest(new CEvent($this));
+<span class="ln">165</span>     }
+<span class="ln">166</span> 
+<span class="ln">167</span>     /**
+</pre></div>			</td>
+		</tr>
+						<tr class="trace app expanded">
+			<td class="number">
+				#12			</td>
+			<td class="content">
+				<div class="trace-file">
+											<div class="plus">+</div>
+						<div class="minus">–</div>
+										&nbsp;/Applications/MAMP/htdocs/fishing/index.php(13): <strong>CApplication</strong>-&gt;<strong>run</strong>()				</div>
+
+				<div class="code"><pre><span class="ln">08</span> defined('YII_DEBUG') or define('YII_DEBUG',true);
+<span class="ln">09</span> // specify how many levels of call stack should be shown in each log message
+<span class="ln">10</span> defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
+<span class="ln">11</span> 
+<span class="ln">12</span> require_once($yii);
+<span class="error"><span class="ln error-ln">13</span> Yii::createWebApplication($config)-&gt;run();
+</span></pre></div>			</td>
+		</tr>
+				</tbody></table>
+	</div>
+
+	<div class="version">
+		2013-01-10 02:59:50 Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/0.9.8r DAV/2 PHP/5.4.4 <a href="http://www.yiiframework.com/">Yii Framework</a>/1.1.12	</div>
+</div>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var traceReg = new RegExp("(^|\\s)trace-file(\\s|$)");
+var collapsedReg = new RegExp("(^|\\s)collapsed(\\s|$)");
+
+var e = document.getElementsByTagName("div");
+for(var j=0,len=e.length;j<len;j++){
+	if(traceReg.test(e[j].className)){
+		e[j].onclick = function(){
+			var trace = this.parentNode.parentNode;
+			if(collapsedReg.test(trace.className))
+				trace.className = trace.className.replace("collapsed", "expanded");
+			else
+				trace.className = trace.className.replace("expanded", "collapsed");
+		}
+	}
+}
+/*]]>*/
+</script>
+
+
+
+<!-- start log messages -->
+<table class="yiiLog" width="100%" cellpadding="2" style="border-spacing:1px;font:11px Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;color:#666666;">
+	<tbody><tr>
+		<th style="background:black;color:white;" colspan="5">
+			Application Log
+		</th>
+	</tr>
+	<tr style="background-color: #ccc;">
+	    <th style="width:120px">Timestamp</th>
+		<th>Level</th>
+		<th>Category</th>
+		<th>Message</th>
+	</tr>
+	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.447772</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading "log" application component
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.450047</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading "request" application component
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.451072</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading "urlManager" application component
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.462256</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading "db" application component
+in /Applications/MAMP/htdocs/fishing/protected/components/ShardAR.php (54)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.462815</td>
+		<td>trace</td>
+		<td>system.db.CDbConnection</td>
+		<td><pre>Opening DB connection
+in /Applications/MAMP/htdocs/fishing/protected/components/ShardAR.php (54)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.465503</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SHOW COLUMNS FROM `c_user_shard`
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.468302</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SHOW CREATE TABLE `c_user_shard`
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.468929</td>
+		<td>trace</td>
+		<td>system.db.ar.CActiveRecord</td>
+		<td><pre>UserShard.findByAttributes()
+in /Applications/MAMP/htdocs/fishing/protected/models/UserShard.php (15)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.470109</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SELECT * FROM `c_user_shard` `t` WHERE
+`t`.`opensocial_owner_id`=:yp0 LIMIT 1
+in /Applications/MAMP/htdocs/fishing/protected/models/UserShard.php (15)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.473917</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading "db_shard1" application component
+in /Applications/MAMP/htdocs/fishing/protected/components/ShardAR.php (36)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.474129</td>
+		<td>trace</td>
+		<td>system.db.CDbConnection</td>
+		<td><pre>Opening DB connection
+in /Applications/MAMP/htdocs/fishing/protected/components/ShardAR.php (36)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.475594</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SHOW COLUMNS FROM `s_user`
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.484601</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SHOW CREATE TABLE `s_user`
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.487761</td>
+		<td>trace</td>
+		<td>system.db.ar.CActiveRecord</td>
+		<td><pre>User.findByPk()
+in /Applications/MAMP/htdocs/fishing/protected/models/User.php (18)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.488426</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SELECT * FROM `s_user` `t` WHERE `t`.`id`='4' LIMIT 1
+in /Applications/MAMP/htdocs/fishing/protected/models/User.php (18)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.491288</td>
+		<td>trace</td>
+		<td>system.db.ar.CActiveRecord</td>
+		<td><pre>UserShard.findByAttributes()
+in /Applications/MAMP/htdocs/fishing/protected/models/UserShard.php (15)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.491914</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SELECT * FROM `c_user_shard` `t` WHERE
+`t`.`opensocial_owner_id`=:yp0 LIMIT 1
+in /Applications/MAMP/htdocs/fishing/protected/models/UserShard.php (15)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(85)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.492821</td>
+		<td>trace</td>
+		<td>system.db.ar.CActiveRecord</td>
+		<td><pre>User.findByPk()
+in /Applications/MAMP/htdocs/fishing/protected/models/User.php (18)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.493339</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SELECT * FROM `s_user` `t` WHERE `t`.`id`='4' LIMIT 1
+in /Applications/MAMP/htdocs/fishing/protected/models/User.php (18)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(88)
+in
+/Applications/MAMP/htdocs/fishing/protected/components/AuthNeedController.php
+(31)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.494518</td>
+		<td>trace</td>
+		<td>system.db.ar.CActiveRecord</td>
+		<td><pre>User.findByPk()
+in
+/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php
+(134)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.495059</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SELECT * FROM `s_user` `t` WHERE `t`.`id`='4' LIMIT 1
+in
+/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php
+(134)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.501612</td>
+		<td>trace</td>
+		<td>system.db.ar.CActiveRecord</td>
+		<td><pre>User.find()
+in
+/Applications/MAMP/htdocs/fishing/protected/services/DebugToolService.php
+(83)
+in
+/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php
+(143)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.502192</td>
+		<td>trace</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>Querying SQL: SELECT * FROM `s_user` `t` WHERE opensocial_owner_id = 'l1
+LIMIT 1
+in
+/Applications/MAMP/htdocs/fishing/protected/services/DebugToolService.php
+(83)
+in
+/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php
+(143)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">02:59:50.513766</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading "coreMessages" application component
+in
+/Applications/MAMP/htdocs/fishing/protected/services/DebugToolService.php
+(83)
+in
+/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php
+(143)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFC0CB">
+		<td align="center">02:59:50.516318</td>
+		<td>error</td>
+		<td>system.db.CDbCommand</td>
+		<td><pre>CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access
+violation: 1064 You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near
+''l1 LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM
+`s_user` `t` WHERE opensocial_owner_id = 'l1 LIMIT 1.
+in
+/Applications/MAMP/htdocs/fishing/protected/services/DebugToolService.php
+(83)
+in
+/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php
+(143)
+in /Applications/MAMP/htdocs/fishing/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFC0CB">
+		<td align="center">02:59:50.519454</td>
+		<td>error</td>
+		<td>exception.CDbException</td>
+		<td><pre>exception 'CDbException' with message 'CDbCommand failed to execute the SQL
+statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have
+an error in your SQL syntax; check the manual that corresponds to your
+MySQL server version for the right syntax to use near ''l1 LIMIT 1' at line
+1. The SQL statement executed was: SELECT * FROM `s_user` `t` WHERE
+opensocial_owner_id = 'l1 LIMIT 1' in
+/Applications/MAMP/htdocs/yii/framework/db/CDbCommand.<a href="http://php:528/">php:528</a>
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbCommand.php(408):
+CDbCommand-&gt;queryInternal('fetch', Array, Array)
+#1 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1307):
+CDbCommand-&gt;queryRow()
+#2 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1412):
+CActiveRecord-&gt;query(Object(CDbCriteria))
+#3
+/Applications/MAMP/htdocs/fishing/protected/services/DebugToolService.php(83):
+CActiveRecord-&gt;find('opensocial_owne...', Array)
+#4
+/Applications/MAMP/htdocs/fishing/protected/controllers/DebugToolController.php(143):
+DebugToolService::validateOSI(Object(User))
+#5
+/Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(50):
+DebugToolController-&gt;actionEditUser()
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(309):
+CInlineAction-&gt;runWithParams(Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CController.php(287):
+CController-&gt;runAction(Object(CInlineAction))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CController.php(266):
+CController-&gt;runActionWithFilters(Object(CInlineAction), Array)
+#9 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(283):
+CController-&gt;run('editUser')
+#10 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(142):
+CWebApplication-&gt;runController('debugTool/editU...')
+#11 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(162):
+CWebApplication-&gt;processRequest()
+#12 /Applications/MAMP/htdocs/fishing/index.php(13): CApplication-&gt;run()
+#13 {main}
+REQUEST_URI=/fishing/<a href="http://index.php/debugTool/editUser/4">index.php/debugTool/editUser/4</a>
+HTTP_REFERER=<a href="./CDbException_files/CDbException.html">http://localhost:8888/fishing/index.php/debugTool/editUser/4</a>
+---</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">02:59:50.519752</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading "errorHandler" application component</pre></td>
+	</tr></tbody></table>
+<!-- end of log messages --><iframe width="0" height="0" frameborder="0" style="border: 0px solid; z-index: 2147483647; height: 0px; width: 0px; background-color: transparent;" src="about:blank" id="GRcontextMenuIFrame" scrolling="no"></iframe><div id="GingerWidgetInfo" style="display:none;">{"version":"0.1.0.182","isExtension":true,"extensionName":"Chrome"}</div></body></html>

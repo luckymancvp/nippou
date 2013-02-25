@@ -104,6 +104,41 @@ class MailController extends Controller
         }
     }
 
+    public function actionSendByClient()
+    {
+        // Get login user id
+        $user_id = Yii::app()->user->id;
+
+        $form = Forms::model()->findByAttributes(array("user_id"=>$user_id));
+        if (!$form){
+            Yii::app()->user->setFlash("error", "Please create form before send mail");
+            //$this->redirect(array("/mail/createForm"));
+        }
+
+
+        $params = Yii::app()->request->getParam("params");
+        if ($params){
+            $mailContent = $this->genMailContent($form->content, $params );
+            Mails::saveSentMail($params );
+
+            $setting = Settings::model()->findByAttributes(array("user_id"=>$user_id));
+            if (!$setting) {
+                throw new CHttpException(404, "Can't find your settings");
+            }
+
+            $today = date("Y/m/d");
+            $title = "【日報】{$setting->name}　$today";
+
+            die(CJSON::encode(array(
+                'title'=> $title,
+                'to_email'=> $setting->to_email,
+                'content' => $mailContent,
+            )));
+        }
+
+        $this->redirect(array("/mail"));
+    }
+
     private function escapeCharacter($content)
     {
         $content = preg_replace('/\{([^}]*)\}/', '<code id="code-${1}">{${1}}</code>', $content);

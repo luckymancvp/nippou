@@ -22,8 +22,6 @@
     echo '<script type="text/javascript" src="'.Yii::app()->theme->baseUrl.'/js/wysihtml5.js"></script>';
 ?>
 
-
-
 <h1>Send Today's Report !!</h1>
 <div class="row">
     <div class="span5 well" id="content-form" style="min-height: 780px;">
@@ -66,6 +64,7 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#" id="params-submit">Send</a>
+                            <a href="#" id="send-by-client">Send By Mail Client</a>
                             <a href="#send-later" data-toggle="modal">Send Later</a>
                             <a href="#myModal" data-toggle="modal" id="review-button">Review</a>
                         </li>
@@ -182,6 +181,29 @@
                 data: $("form").serialize(),
                 success: function(e){
                     $("#review-content").html(e);
+                }
+            });
+        });
+
+        // For mail client
+        $("#send-by-client").click(function(e){
+            $.ajax({
+                url: '<?php echo Yii::app()->createUrl("/mail/sendByClient")?>',
+                method: "post",
+                data: $("form").serialize(),
+                success: function(e){
+                    var e = $.parseJSON(e);
+                    e.content = e.content.replace(/<br>/g, "%0A");
+                    e.content = e.content.replace(/&nbsp;/g, "%08");
+                    e.content = e.content.replace(/&quot;/g, "%22");
+                    e.content = e.content.replace(/&amp;/g, "%26");
+                    e.content = e.content.replace(/&lt;/g, "%3C");
+                    e.content = e.content.replace(/&gt;/g, "%3E");
+
+                    console.log(e.content);
+                    link = "mailto:"+e.to_email+"?Subject="+ e.title+"&Body="+ e.content;
+                    window.location = link;
+                    location.reload();
                 }
             });
         });
