@@ -1,12 +1,11 @@
 <?php
 
 // change the following paths if necessary
-$yii=dirname(__FILE__).'/../yii-1.1.13/framework/yii.php';
+$yii=dirname(__FILE__).'/yii/yii.php';
 
 $config_file = "main.php";
 if ($_SERVER["SERVER_NAME"] != "nippou.jp"){
     $config_file = "deploy.php";
-    $yii=dirname(__FILE__).'/yii-1.1.13/framework/yii.php';
 }
 $config=dirname(__FILE__).'/protected/config/'.$config_file;
 
