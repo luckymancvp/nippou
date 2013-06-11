@@ -35,14 +35,14 @@ class ImportDBCommand extends CConsoleCommand {
 
     private function getDBInfo(){
     	$config = Yii::app()->getComponents(false);
-    	$connString = $config[db][connectionString];
+    	$connString = $config["db"]["connectionString"];
         $connArr    = preg_split("/[=;]/", $connString);
 
         return array(
         	'host'     => $connArr[1],
         	'dbName'   => $connArr[3],
-        	'username' => $config[db]["username"],
-        	'password' => $config[db]["password"],
+        	'username' => $config["db"]["username"],
+        	'password' => $config["db"]["password"],
         );
     }
 
