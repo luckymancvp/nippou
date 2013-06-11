@@ -5,10 +5,10 @@ return CMap::mergeArray(
 	array(
 		'components'=>array(
             'db'=>array(
-                'connectionString' => 'mysql:host=mysql.1freehosting.com;dbname=u298054059_tu',
+                'connectionString' => 'mysql:host=localhost;dbname=nippou',
                 'emulatePrepare' => true,
-                'username' => 'u298054059_tu',
-                'password' => 'hedspi',
+                'username' => 'root',
+                'password' => 'db_Hedspi2e',
                 'charset' => 'utf8',
             ),
 		),
