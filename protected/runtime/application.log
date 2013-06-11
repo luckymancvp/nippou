@@ -3659,3 +3659,33 @@ Stack trace:
 #3 /Applications/MAMP/htdocs/yii-1.1.13/framework/yiic.php(33): CConsoleApplication->run()
 #4 /Applications/MAMP/htdocs/nippou/protected/yiic.php(12): require_once()
 
+2013/06/11 17:35:17 [error] [exception.CException] exception 'CException' with message 'CHttpRequest is unable to determine the request URI.' in /var/www/html/app/nippou/releases/20130611082639/yii/web/CHttpRequest.php:506
+Stack trace:
+#0 /var/www/html/app/nippou/releases/20130611082639/yii/web/CHttpRequest.php(418): CHttpRequest->getRequestUri()
+#1 /var/www/html/app/nippou/releases/20130611082639/yii/web/CUrlManager.php(361): CHttpRequest->getPathInfo()
+#2 /var/www/html/app/nippou/releases/20130611082639/yii/web/CWebApplication.php(140): CUrlManager->parseUrl(Object(CHttpRequest))
+#3 /var/www/html/app/nippou/releases/20130611082639/yii/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/html/app/nippou/releases/20130611082639/index.php(18): CApplication->run()
+#5 {main}
+---
+2013/06/11 17:49:26 [error] [php] Use of undefined constant db - assumed 'db' (/var/www/html/app/nippou/releases/20130611082639/protected/commands/ImportDBCommand.php:38)
+Stack trace:
+#0 /var/www/html/app/nippou/releases/20130611082639/yii/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 /var/www/html/app/nippou/releases/20130611082639/yii/base/CApplication.php(169): CConsoleApplication->processRequest()
+#2 /var/www/html/app/nippou/releases/20130611082639/yii/yiic.php(33): CConsoleApplication->run()
+#3 /var/www/html/app/nippou/releases/20130611082639/protected/yiic.php(13): require_once()
+
+2013/06/11 17:50:06 [error] [php] Use of undefined constant connectionString - assumed 'connectionString' (/var/www/html/app/nippou/releases/20130611082639/protected/commands/ImportDBCommand.php:38)
+Stack trace:
+#0 /var/www/html/app/nippou/releases/20130611082639/yii/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 /var/www/html/app/nippou/releases/20130611082639/yii/base/CApplication.php(169): CConsoleApplication->processRequest()
+#2 /var/www/html/app/nippou/releases/20130611082639/yii/yiic.php(33): CConsoleApplication->run()
+#3 /var/www/html/app/nippou/releases/20130611082639/protected/yiic.php(13): require_once()
+
+2013/06/11 17:50:23 [error] [php] Use of undefined constant db - assumed 'db' (/var/www/html/app/nippou/releases/20130611082639/protected/commands/ImportDBCommand.php:44)
+Stack trace:
+#0 /var/www/html/app/nippou/releases/20130611082639/yii/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 /var/www/html/app/nippou/releases/20130611082639/yii/base/CApplication.php(169): CConsoleApplication->processRequest()
+#2 /var/www/html/app/nippou/releases/20130611082639/yii/yiic.php(33): CConsoleApplication->run()
+#3 /var/www/html/app/nippou/releases/20130611082639/protected/yiic.php(13): require_once()
+
