@@ -27,14 +27,14 @@ after "deploy:create_symlink", "my_namespace:symlink"
 namespace :my_namespace do
   desc "Create symlink"
   task :symlink do
-  	run "chmod 777 #{shared_path}/system/assets"
-  	run "chmod 777 #{shared_path}/log/runtime"
-
     run "mkdir -p #{shared_path}/system/assets"
     run "mkdir -p #{shared_path}/log/runtime"
     
     run "ln -nfs #{release_path} /var/www/html/#{application}"
     run "ln -nfs #{shared_path}/system/assets #{release_path}/assets"
     run "ln -nfs #{shared_path}/log/runtime #{release_path}/protected/runtime"
+
+    run "chmod 777 #{shared_path}/system/assets"
+  	run "chmod 777 #{shared_path}/log/runtime"
   end
 end
