@@ -1,12 +1,13 @@
 <?php
 
 // change the following paths if necessary
-$yiic=dirname(__FILE__).'/../../yii-1.1.13/framework/yiic.php';
+$yiic=dirname(__FILE__).'/../yii/yiic.php';
 $config=dirname(__FILE__).'/config/console.php';
 
-if ($_SERVER["SERVER_NAME"] == "nippou.jp"){
+$curr    = getcwd();
+$folders = explode("/", $curr);
+if ($folders[1] == "var"){
     $config=dirname(__FILE__).'/config/console_deploy.php';
-    $yiic=dirname(__FILE__).'/../yii-1.1.13/framework/yiic.php';
 }
 
 require_once($yiic);
