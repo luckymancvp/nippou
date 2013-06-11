@@ -12,9 +12,12 @@ class ImportDBCommand extends CConsoleCommand {
     	$db = $this->getDBInfo();
     	$link = $this->connect($db);
 
-    	//$sql  = "DROP DATABASE IF EXISTS {$db["dbName"]} ;";
-        //$sql .= "CREATE DATABASE IF NOT EXISTS {$db["dbName"]} ;";
-        $sql = "";
+		exec($this->createCommand($db));
+		die();
+    	
+    	$sql  = "DROP DATABASE IF EXISTS {$db["dbName"]} ;";
+        $sql .= "CREATE DATABASE IF NOT EXISTS {$db["dbName"]} ;";
+        $sql .= "USE {$db["dbName"]};";
 
         $dataPath = Yii::getPathOfAlias("application"). "/data";
         if ($handle = opendir($dataPath)){
@@ -27,7 +30,7 @@ class ImportDBCommand extends CConsoleCommand {
         }
 
         echo $sql;
-        mysql_query($sql);
+		mysql_query($sql);
     }
 
     private function getDBInfo(){
@@ -50,6 +53,29 @@ class ImportDBCommand extends CConsoleCommand {
 		}
 		echo 'Connected successfully';
 		return $link;
+    }
+
+    private function createCommand($db){
+    	$MYSQL="mysql -u{$db["username"]} -p{$db["password"]}";
+    	$dataPath = Yii::getPathOfAlias("application"). "/data";
+    	return <<<CMD
+
+#!/usr/bin/env sh
+
+echo 'Drop database'
+$MYSQL -e "DROP DATABASE IF EXISTS {$db["dbName"]}"
+
+echo 'Create database'
+$MYSQL -e "CREATE DATABASE {$db["dbName"]} DEFAULT CHARACTER SET UTF8"
+
+echo 'Create table'
+
+for SQL in `find $dataPath | grep .sql`
+do
+    $MYSQL {$db["dbName"]} < \$SQL
+done
+
+CMD;
     }
 
     /**
