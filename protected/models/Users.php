@@ -77,7 +77,10 @@ class Users extends UsersBase
     public function sendTodayMissMail()
     {
         /** @var $setting Settings */
-        $setting = Settings::model()->findByAttributes(array('user_id'=>$this->id));
+        $setting = Settings::model()->findByAttributes(array(
+            'user_id' => $this->id,
+            'time'    => date("i"),
+        ));
         if (!$setting) return false;
 
         // Get today draft mail
